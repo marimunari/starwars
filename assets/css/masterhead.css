@@ -1,0 +1,113 @@
+.masterhead {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(to bottom, transparent 0%, #000 90%),
+    url("../img/bg-masthead.jpg");
+  background-position: center left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.masterhead > .menu {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.masterhead > .menu > .menu-logo {
+  font-family: StarJedi;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.masterhead > .menu > .menu-logo:hover {
+  color: #f9d71c;
+}
+
+.masterhead > .menu > .menu-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.masterhead > .menu > .menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.masterhead > .menu > .menu-nav ul li + li {
+  margin-left: 20px;
+}
+
+.masterhead > .menu > .menu-nav ul li a {
+  font-family: Barlow, sans-serif;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.masterhead > .menu > .menu-nav ul li a:hover {
+  color: #f9d71c;
+}
+
+.masterhead > .cta-1 {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.masterhead > .cta-1 h1 {
+  max-width: 200px;
+  font-family: StarJedi;
+  font-size: 3.5rem;
+  line-height: 0.82;
+  letter-spacing: 10px;
+  text-align: center;
+  color: #f9d71c;
+  mix-blend-mode: hard-light;
+  opacity: 0.72;
+  padding-bottom: 20px;
+}
+
+.masterhead > .cta-1 span {
+  max-width: 500px;
+  font-family: Barlow, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #fff;
+  opacity: 0.6;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 641px) {
+  .masterhead > .menu {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .masterhead > .menu {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .masterhead > .menu > .menu-nav ul li + li {
+    margin-left: 50px;
+  }
+
+  .masterhead > .cta-1 h1 {
+    font-size: 5rem;
+    line-height: 1;
+  }
+}

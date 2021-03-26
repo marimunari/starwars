@@ -1,0 +1,61 @@
+.cta-2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(to bottom, transparent 0%, #000 90%),
+    url("../img/bg-signup.jpg");
+  background-position: center left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.cta-2 > .icon-cta {
+  max-width: 100px;
+  padding-bottom: 10px;
+}
+
+.cta-2 h2 {
+  font-family: Barlow, sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+}
+
+.cta-2 > .subscribe {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-2 > .subscribe input {
+  width: 300px;
+  font-family: Barlow, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (min-width: 992px) {
+  .cta-2 > .subscribe {
+    width: 600px;
+    flex-direction: row;
+  }
+
+  .cta-2 > .subscribe input {
+    width: 400px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
